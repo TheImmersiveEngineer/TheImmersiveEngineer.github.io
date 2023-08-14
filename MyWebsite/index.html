@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale-1">
+		<meta name="description" content="The Immersive Engineer's Website">
+		<meta name="author" content="The Immersive Engineer">
+		<title>The Immersive Engineer</title>
+		<link rel="stylesheet" href="display.css" type="text/css">
+	</head>
+	<body>
+		
+		<h1>The Immersive Engineer</h1>
+		<header>
+			<nav class="sticky-nav">
+				<ul>
+					<li><a href="#intro">Introduction</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#accounts">Accounts</a></li>
+				</ul>
+			</nav>		
+		</header>
+		<main class="content">
+			<img src=images/Gear.png>
+			<div>
+				<h2 id='intro'>Introduction<h2>
+			</div>
+			
+		</main>
+		<footer>				
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+				<script>
+				$(document).ready(function(){
+					$('a[href^="#"]').on('click',function (e) {
+						e.preventDefault();
+
+						var target = this.hash;
+						var $target = $(target);
+
+						$('html, body').stop().animate({
+							'scrollTop': $target.offset().top
+						}, 1200, 'swing', function () {
+							window.location.hash = target;
+						});
+					});
+				});</script>
+				
+				
+		<script>
+        // Get the navigation element and its initial offset from the top
+        const stickyNav = document.querySelector('.sticky-nav');
+        const initialNavOffset = stickyNav.offsetTop;
+		const content = document.querySelector('.content');
+
+        // Function to handle scrolling and sticking the navigation
+        function handleScroll() {
+            if (window.pageYOffset >= initialNavOffset) {
+                // When scrolled past the initial offset, make the navigation sticky
+                stickyNav.classList.add('sticky');
+				content.classList.add('contentStuck');
+            } else {
+                // Otherwise, reset to normal positioning
+                stickyNav.classList.remove('sticky');
+				content.classList.remove('contentStuck');
+            }
+        }
+
+        // Listen for the scroll event and call the handleScroll function
+        window.addEventListener('scroll', handleScroll);
+    </script>
+	</body>
+</html>
