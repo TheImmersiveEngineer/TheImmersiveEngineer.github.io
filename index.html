@@ -12,7 +12,7 @@
 		
 		<h1>The Immersive Engineer</h1>
 		<header>
-			<nav class="sticky-nav">
+			<nav>
 				<ul>
 					<li><a href="#intro">Introduction</a></li>
 					<li><a href="#about">About Me</a></li>
@@ -20,14 +20,23 @@
 				</ul>
 			</nav>		
 		</header>
-		<main class="content">
+		<main>
+			<img src="images/gear.png" id="gear1">
+			<img src="images/gear.png" id="gear2">
 			<div>
 				<h2 id='intro'>Introduction<h2>
+				<p>I am a niche internet microcelebrity.<p>
 			</div>
 			
 		</main>
+		
+		
+		
 		<footer>				
 		</footer>
+		
+		
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 				<script>
 				$(document).ready(function(){
@@ -44,29 +53,6 @@
 						});
 					});
 				});</script>
-				
-				
-		<script>
-        // Get the navigation element and its initial offset from the top
-        const stickyNav = document.querySelector('.sticky-nav');
-        const initialNavOffset = stickyNav.offsetTop;
-		const content = document.querySelector('.content');
-
-        // Function to handle scrolling and sticking the navigation
-        function handleScroll() {
-            if (window.pageYOffset >= initialNavOffset) {
-                // When scrolled past the initial offset, make the navigation sticky
-                stickyNav.classList.add('sticky');
-				content.classList.add('contentStuck');
-            } else {
-                // Otherwise, reset to normal positioning
-                stickyNav.classList.remove('sticky');
-				content.classList.remove('contentStuck');
-            }
-        }
-
-        // Listen for the scroll event and call the handleScroll function
-        window.addEventListener('scroll', handleScroll);
-    </script>
+			
 	</body>
 </html>

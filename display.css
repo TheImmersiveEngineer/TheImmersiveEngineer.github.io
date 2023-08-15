@@ -4,20 +4,6 @@ html{
 	overflow-x: hidden;
 }
 
-
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-	right: 0;
-	z-index: 100; /* Ensure the navigation stays on top of other elements */
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1); /* Add a shadow for a nice effect */
-}
-
-.contentStuck{
-	margin-top: 6rem;
-}
-
 nav
 {
 	background-color:black;
@@ -43,7 +29,7 @@ nav ul
 nav ul li
 {
 	padding:3rem;
-	font-family: 'ZCOOL XiaoWei', serif;
+	font-family: 'Righteous', serif;
 	font-size:100%;
 	margin:0;
 	text-align:center;
@@ -97,15 +83,39 @@ h1, h2, h3, h4{
 	font-family: 'Righteous', serif;
 }
 
-img{
-	position:absolute;
-	left:50vw;
-	animation-name: rotateGear;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
+h2{
+	border-bottom: 0.5rem solid orangered;
+	width:50vw;
 }
 
-@keyframes rotateGear{
-  from {transform: rotate(0deg)}
-  to {transform: rotate(360deg)}
+img{
+	position:absolute;
+	right:-25vw;
+	width:50vw;
+}
+
+#gear1{
+	animation-name:gearSpin1;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#gear2{
+	animation-name:gearSpin2;
+	animation-duration: 10s;
+	animation-iteration-count:infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: reverse;
+	top:47vw;
+}
+
+@keyframes gearSpin1{
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+@keyframes gearSpin2{
+	from {transform:rotate(15deg);}
+	to {transform:rotate(375deg);}
 }
