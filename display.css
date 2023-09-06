@@ -86,12 +86,6 @@ h1, h2, h3, h4{
 h2{
 	border-bottom: 0.5rem solid orangered;
 	width:50vw;
-	font-size:3rem;
-}
-
-h3{
-	border-bottom: 0.5rem solid orangered;
-	width:50vw;
 	font-size:1.5rem;
 }
 
@@ -103,6 +97,10 @@ img{
 
 #about, #accounts{
 	margin-top:3rem;
+}
+
+#about, #accounts, #intro{
+	font-size:3rem;
 }
 
 #gear1{
