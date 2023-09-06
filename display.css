@@ -94,6 +94,10 @@ img{
 	width:50vw;
 }
 
+#about{
+	margin-top:3rem;
+}
+
 #gear1{
 	animation-name:gearSpin1;
 	animation-duration: 10s;
