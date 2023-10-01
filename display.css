@@ -89,6 +89,41 @@ h2{
 	font-size:1.5rem;
 }
 
+@media screen and (max-width: 1000px) {
+	img{
+		display:none;
+		right: 10000vw;
+	}
+	
+	h2{
+	width:75vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h2{
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	main{
+	margin-left:auto;
+	margin-right:auto;
+	}
+	li{
+	margin-bottom:2rem;
+	}
+	ul{
+	list-style:none;
+	padding-left:0;
+	margin-left:0;
+	}
+	nav ul li
+	{
+	padding:5vw;
+	}
+}
+
 img{
 	position:absolute;
 	right:-25vw;
@@ -117,7 +152,7 @@ img{
 	animation-iteration-count:infinite;
 	animation-timing-function: ease-in-out;
 	animation-direction: reverse;
-	top:47vw;
+	top:48vw;
 }
 
 @keyframes gearSpin1{
