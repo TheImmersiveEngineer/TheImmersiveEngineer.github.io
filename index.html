@@ -9,14 +9,12 @@
 		<link rel="stylesheet" href="display.css" type="text/css">
 	</head>
 	<body>
-		
-		<h1>The Immersive Engineer</h1>
 		<header>
+		<h1>The Immersive Engineer</h1>
+		
 			<nav>
 				<ul>
-					<li><a href="#intro">Introduction</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#accounts">Accounts</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="">Projects (WIP)</a></li>
 				</ul>
 			</nav>		
@@ -26,23 +24,23 @@
 			<img src="assets/images/gear.png" id="gear2">
 			<div>
 				<h2 id='intro'>Introduction</h2>
-				<h2><p>I am a niche internet microcelebrity</p></h2>
+				<h3><p>I am a niche internet microcelebrity</p></h3>
 			</div>
 			<div>
 				<h2 id='about'>About</h2>
-				<h2><p>I am mildly well known on the subreddit r/feedthememes where I started the drinking liquid concrete joke. I don't play modded MC as much as I did nor do I post there as often.</p>
+				<h3><p>I am mildly well known on the subreddit r/feedthememes where I started the drinking liquid concrete joke. I don't play modded MC as much as I did nor do I post there as often.</p>
 				<p>I mostly spend my free time fiddling with things in my home lab/workshop. I like to build robots and such in there. I'm kind of a clever guy when I'm not being stupid.</p>
 				<p>I do have some experience with web design and graphic design. I originally wanted to be a web designer before I realized that no I didn't and so now I am an engineer.
-				</p></h2>
+				</p></h3>
 			</div>
 			<div>
 				<h2 id='accounts'>Accounts</h2>
-				<h2><ul>
+				<h3><ul>
 					<li>Reddit: <a href="https://www.reddit.com/user/TheImmersiveEngineer" target="_blank">u/TheImmersiveEngineer</a></li>
 					<li>Youtube: <a href="https://www.youtube.com/@TheImmersiveEngineer" target="_blank">TheImmersiveEngineer</a></li>
 					<li>Discord: theimmersiveengineer</li>
 					<li>Github: <a href="https://github.com/TheImmersiveEngineer" target="_blank">TheImmersiveEngineer</a></li>
-				</ul></h2>
+				</ul></h3>
 			</div>
 			
 		</main>
@@ -54,22 +52,7 @@
 		
 		
 		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-				<script>
-				$(document).ready(function(){
-					$('a[href^="#"]').on('click',function (e) {
-						e.preventDefault();
-
-						var target = this.hash;
-						var $target = $(target);
-
-						$('html, body').stop().animate({
-							'scrollTop': $target.offset().top
-						}, 1200, 'swing', function () {
-							window.location.hash = target;
-						});
-					});
-				});</script>
+		
 			
 	</body>
 </html>

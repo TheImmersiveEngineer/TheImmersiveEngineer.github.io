@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Righteous&display=swap');
 
-html{
-	overflow-x: hidden;
-}
-
 nav
 {
 	background-color:black;
@@ -12,6 +8,23 @@ nav
 	position:relative;
 	left:0;
 	z-index:2;
+}
+
+h1, h2, h3, h4{
+	font-family: 'Righteous', serif;
+}
+
+h2{
+	border-bottom: 0.5rem solid orangered;
+	width:50vw;
+	font-size:1.5rem;
+	margin-top:4rem;
+}
+
+h3{
+	border-bottom: 0.5rem solid orangered;
+	width:50vw;
+	font-size:1.5rem;
 }
 
 nav ul
@@ -45,6 +58,14 @@ body{
 	margin:0;
 }
 
+h1{
+	font-size:clamp(3rem, 8vw, 40rem);
+	margin:0;
+	padding:1rem 0;
+	padding-bottom:2rem;
+	padding-left:1rem;
+}
+
 header{
 	background-color:orangered;
 	padding:0;
@@ -57,36 +78,6 @@ main{
 	z-index:1;
 	position:relative;
 	padding:1rem;
-}
-
-h1{
-	font-size:clamp(3rem, 8vw, 40rem);
-	margin:0;
-	padding:1rem 0;
-	padding-bottom:2rem;
-	padding-left:1rem;
-}
-
-h1, footer{
-	position:sticky;
-	top:0;
-	left:0;
-	background-color:orangered;
-	color:black;
-	display:flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
-}
-
-h1, h2, h3, h4{
-	font-family: 'Righteous', serif;
-}
-
-h2{
-	border-bottom: 0.5rem solid orangered;
-	width:50vw;
-	font-size:1.5rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -128,15 +119,6 @@ img{
 	position:absolute;
 	right:-25vw;
 	width:50vw;
-}
-
-#about, #accounts{
-	margin-top:4rem;
-}
-
-#about, #accounts, #intro{
-	font-size:3rem;
-	margin-bottom:0rem;
 }
 
 #gear1{
