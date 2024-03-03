@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Righteous&display=swap');
 
+html{
+	overflow-x: hidden;
+}
+
 nav
 {
 	background-color:black;
 	height:6rem;
 	width:100%;
-	position:relative;
+
 	left:0;
 	z-index:2;
 }
@@ -64,6 +68,7 @@ h1{
 	padding:1rem 0;
 	padding-bottom:2rem;
 	padding-left:1rem;
+	text-align:center;
 }
 
 header{
